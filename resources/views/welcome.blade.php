@@ -1,8 +1,8 @@
 @extends('template')
 @section('content')
-@dump($kelas)
 <div class="btn-group float-right m-2" role="group" aria-label="Basic example">
-      <a href="/" class="btn btn-primary">Semua Kelas</a>
+      <a href="/kompetensi" class="btn btn-success ">Kompetensi Siswa</a>
+      <a href="/" class="btn btn-warning">Semua Kelas</a>
   @foreach ($kelas as $k)
       <a href="/{{$k}}" class="btn btn-primary">Kelas {{$k}}</a>
   @endforeach
